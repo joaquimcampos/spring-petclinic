@@ -6,7 +6,9 @@ networks:
 
 services:
   app:
-    image: jcampos15/petclinic:v3
+    image: jcampos15/petclinic:dev
+    build:
+      context: .
     ports:
       - 8080:8080
     environment:
